@@ -31,4 +31,8 @@ install: all
 clean:
 	rm -f -- $(NAME) $(OBJ)
 
+uninstall:
+	rm -f ${DESTDIR}${PREFIX}/bin/$(NAME)
+	rm -f ${DESTDIR}${MAN}/man1/stw.1
+
 .PHONY: clean
